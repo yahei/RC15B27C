@@ -1108,9 +1108,6 @@ void GRigid::Impulse() {
 					fvTotal+=fv;
 					hitPosTotal+=hitPos;
 					hn2++;
-					if(HitN>=1) {
-						L-=rmax.cross(n*j1*ud);
-					}
 				}
 			}
 			if(hn2>=1)ApplyImpulse(fvTotal,hitPosTotal/(GFloat)hn2); //—Í‚ð”­¶“_‚Ì•½‹ÏˆÊ’u‚Å“ü—Í‚µ‚Ä‚é?‚¨‚©‚µ‚­‚Ë?  //—Í‚ðÚ“_”‚ÅŠ„‚Á‚Ä‚é? ‚È‚ñ‚Å?
